@@ -1,2 +1,2 @@
-FROM sarjunkumar24391/tomcat:1.0
+FROM tomcat:latest
 COPY clinic.war /usr/local/tomcat/webapps/
