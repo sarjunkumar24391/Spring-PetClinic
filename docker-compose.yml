@@ -5,7 +5,7 @@ services:
   ports:
     - "0.0.0.0:80:8080"
   dns:
-    - "192.168.2.40"
+    - "8.8.8.8"
   links:
     - "db:sarjunkumar24391/mysql_app"
 
@@ -19,6 +19,6 @@ services:
   ports:
    - "3306:3306"
   dns:
-   - 192.168.2.48
+   - 9.9.9.9
   volumes:
    - /petclinic/database:/var/lib/mysql
