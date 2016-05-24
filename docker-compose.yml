@@ -7,8 +7,8 @@ services:
   volumes:
     - /var/run/docker.sock:/run/docker.sock
   dns:
-    - hostname: app
-    - domainname: app.com
+    - "hostname: app"
+    - "domainname: app.com"
   links:
     - "db:sarjunkumar24391/mysql_app"
 
