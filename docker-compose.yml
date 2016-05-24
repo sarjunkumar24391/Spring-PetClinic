@@ -4,6 +4,8 @@ services:
   image: "$PARAM"
   ports:
     - "0.0.0.0:80:8080"
+  dns:
+    - "App"
   links:
     - "db:sarjunkumar24391/mysql_app"
 
@@ -16,5 +18,7 @@ services:
    
   ports:
    - "3306:3306"
+  dns:
+   - "DB"
   volumes:
    - /petclinic/database:/var/lib/mysql
