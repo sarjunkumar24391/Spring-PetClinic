@@ -5,7 +5,7 @@ services:
   ports:
     - "0.0.0.0:80:8080"
   links:
-    - "db:sarjunkumar24391/mysql_app:4.0"
+    - "db:sarjunkumar24391/mysql_app"
 
  db:
   image: sarjunkumar24391/mysql_app:4.0
