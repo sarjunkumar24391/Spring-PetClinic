@@ -5,7 +5,7 @@ services:
   ports:
     - "0.0.0.0:80:8080"
   links:
-    - "db:sarjunkumar24391/mysql_app"
+    - "db:sarjunkumar24391/mysql_app:4.0"
 
  db:
   image: sarjunkumar24391/mysql_app:4.0
@@ -13,8 +13,10 @@ services:
    - "MYSQL_ROOT_PASSWORD: petclinic"
    - "MYSQL_USER: root"
    - "MYSQL_PASSWORD: petclinic"
-   - "MYSQL_DATABASE: MYSQL"
+   
   ports:
    - "3306:3306"
   volumes:
    - /petclinic/database:/var/lib/mysql
+   links:
+    - "$PARAM"
