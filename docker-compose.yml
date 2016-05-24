@@ -4,6 +4,8 @@ services:
   image: "$PARAM"
   ports:
     - "0.0.0.0:80:8080"
+  volumes:
+    - /var/run/docker.sock:/run/docker.sock
   dns:
     - "172:31:28:177"
   links:
@@ -18,6 +20,7 @@ services:
    
   ports:
    - "3306:3306"
-  dns: 172:31:28:177
   volumes:
    - /petclinic/database:/var/lib/mysql
+   - /var/run/docker.sock:/run/docker.sock
+  dns: 172:31:28:177
