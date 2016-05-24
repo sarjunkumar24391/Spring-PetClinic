@@ -18,5 +18,3 @@ services:
    - "3306:3306"
   volumes:
    - /petclinic/database:/var/lib/mysql
-   links:
-    - "$PARAM"
