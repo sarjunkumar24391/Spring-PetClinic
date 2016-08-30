@@ -4,7 +4,7 @@ node {
 
    // Get some code from a GitHub repository
  // git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
-checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sarjunkumar24391/Spring-PetClinic.git']]]
+checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/Spring-Security']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sarjunkumar24391/Spring-PetClinic.git']]]
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
